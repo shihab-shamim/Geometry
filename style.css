@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #1090D8;
+    --background-color: #F1F1F1;
+    --card-background: #FFFFFF;
+    --text-color: #414141;
+    --border-radius: 8px;
+  }
+
+.title-section h1 {
+    font-size: 2rem;
+    color: var(--text-color);
+  }
+  
+  .title-section p {
+    color: #666;
+    font-size: 1.2rem;
+  }
+  .container-content {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  
+  .blog-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+  }
+  .shape-card {
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+  }
+  .formula {
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  .input-group {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .calculate-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: var(--border-radius);
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .calculate-btn:hover {
+    opacity: 0.9;
+  }
