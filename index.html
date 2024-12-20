@@ -22,16 +22,16 @@
               <main class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 px-2 md:p-0">
                 <!-- Triangle -->
 
-                <div class="shape-card md:w-96 bg-[#FFFFFF]">
+                <div class="shape-card  bg-[#FFFFFF]">
                     
                         <img class="flex justify-center items-center w-3/4 mx-auto md:w-80" src="images/triangle.png" alt="">
                     
                     <h2 class="text-black font-bold mt-1">Triangle</h2>
                     <p class="formula">Area (A) = 0.5 × b × h</p>
                     <div class="input-group w-60 mx-auto">
-                      <input id="triangle-base" type="number" class=" w-20 bg-[#F1F1F1] p-1 text-black" placeholder="b">
+                      <input id="triangle-base" type="number" min="0"  class=" w-20 bg-[#F1F1F1] p-1 text-black" placeholder="b">
                       <span>cm</span>
-                      <input id="triangle-height" type="number"  class=" w-20 bg-[#F1F1F1] p-1 text-black" placeholder="h">
+                      <input id="triangle-height" type="number" min="0"   class=" w-20 bg-[#F1F1F1] p-1 text-black" placeholder="h">
                       <span>cm</span>
                     </div>
                     <div>
@@ -39,6 +39,109 @@
 
                     </div>
                     <button onclick="triangleCalculator()" class="calculate-btn">Calculate</button>
+                  </div>
+                <!-- RectangleCalculator -->
+
+                <div class="shape-card  bg-[#FFFFFF] ">
+                    
+                        <img class="flex justify-center items-center w-3/4 mx-auto md:w-80 h-60" src="images/rectangle.png" alt="">
+                    
+                    <h2 class="text-black font-bold mt-1">Rectangle</h2>
+                    <p class="formula">Area (A) = w x I</p>
+                    <div class="input-group w-60 mx-auto">
+                      <input id="rectangle-width" type="number" min="0"  class=" w-20 bg-[#F1F1F1] p-1 text-black" placeholder="w">
+                      <span>cm</span>
+                      <input id="rectangle-lenght" type="number" min="0"   class=" w-20 bg-[#F1F1F1] p-1 text-black" placeholder="l">
+                      <span>cm</span>
+                    </div>
+                    <div>
+                        <p class="text-black">Area: <span id="show-rectangle">0</span> cm <sup>2</sup></p>
+
+                    </div>
+                    <button onclick="rectangleCalculator()" class="calculate-btn">Calculate</button>
+                  </div>
+              
+                <!-- Parallelogram -->
+
+                <div class="shape-card  bg-[#FFFFFF] ">
+                    
+                        <img class="flex justify-center items-center w-3/4 mx-auto md:w-80 h-60" src="images/parallelogram.png" alt="">
+                    
+                    <h2 class="text-black font-bold mt-1">Parallelogram</h2>
+                    <p class="formula">Area (A) = b x h</p>
+                    <div class="input-group w-60 mx-auto">
+                      <input id="parallelogram-base" type="number" min="0" class=" w-20 bg-[#F1F1F1] p-1 text-black" placeholder="b">
+                      <span>cm</span>
+                      <input id="parallelogram-height" type="number" min="0"   class=" w-20 bg-[#F1F1F1] p-1 text-black" placeholder="h">
+                      <span>cm</span>
+                    </div>
+                    <div>
+                        <p class="text-black">Area: <span id="show-parallelogram">0</span> cm <sup>2</sup></p>
+
+                    </div>
+                    <button onclick="parallelogramCalculator()" class="calculate-btn">Calculate</button>
+                  </div>
+              
+                <!-- Rhombus -->
+
+                <div class="shape-card  bg-[#FFFFFF] ">
+                    
+                        <img class="flex justify-center items-center w-3/4 mx-auto md:w-80 h-60" src="images/rhombus.png" alt="">
+                    
+                    <h2 class="text-black font-bold mt-1">Rhombus</h2>
+                    <p class="formula">Area (A) = 0.5 x d<sub class="">1</sub> x d<sub>2</sub> </p>
+                    <div class="input-group w-60 mx-auto">
+                      <input id="rhombus-base" type="number" min="0" class=" w-20 bg-[#F1F1F1] p-1 text-black" placeholder="d1">
+                      <span>cm</span>
+                      <input id="rhombus-height" type="number" min="0"   class=" w-20 bg-[#F1F1F1] p-1 text-black" placeholder="d2">
+                      <span>cm</span>
+                    </div>
+                    <div>
+                        <p class="text-black">Area: <span id="show-rhombus">0</span> cm <sup>2</sup></p>
+
+                    </div>
+                    <button onclick="rhombusCalculator()" class="calculate-btn">Calculate</button>
+                  </div>
+              
+                <!-- Pentagon -->
+
+                <div class="shape-card  bg-[#FFFFFF] ">
+                    
+                        <img class="flex justify-center items-center w-3/4 mx-auto md:w-80 h-60" src="images/pentagon.png" alt="">
+                    
+                    <h2 class="text-black font-bold mt-1">Pentagon</h2>
+                    <p class="formula">Area (A) = 0.5 x p x b </p>
+                    <div class="input-group w-60 mx-auto">
+                      <input id="pentagon-base" type="number" min="0" class=" w-20 bg-[#F1F1F1] p-1 text-black" placeholder="p">
+                      <span>cm</span>
+                      <input id="pentagon-height" type="number" min="0"   class=" w-20 bg-[#F1F1F1] p-1 text-black" placeholder="b">
+                      <span>cm</span>
+                    </div>
+                    <div>
+                        <p class="text-black">Area: <span id="show-pentagon">0</span> cm <sup>2</sup></p>
+
+                    </div>
+                    <button onclick="pentagonCalculator()" class="calculate-btn">Calculate</button>
+                  </div>
+                <!-- Ellipse -->
+
+                <div class="shape-card  bg-[#FFFFFF] ">
+                    
+                        <img class="flex justify-center items-center w-3/4 mx-auto md:w-80 h-60" src="images/ellipse.png" alt="">
+                    
+                    <h2 class="text-black font-bold mt-1">Ellipse</h2>
+                    <p class="formula">Area (A) =  πab</p>
+                    <div class="input-group w-60 mx-auto">
+                      <input id="ellipse-base" type="number" min="0" class=" w-20 bg-[#F1F1F1] p-1 text-black" placeholder="a">
+                      <span>cm</span>
+                      <input id="ellipse-height" type="number" min="0"   class=" w-20 bg-[#F1F1F1] p-1 text-black" placeholder="b">
+                      <span>cm</span>
+                    </div>
+                    <div>
+                        <p class="text-black">Area: <span id="show-ellipse">0</span> cm <sup>2</sup></p>
+
+                    </div>
+                    <button onclick="ellipseCalculator()" class="calculate-btn">Calculate</button>
                   </div>
               
 
