@@ -88,6 +88,6 @@ function ellipseCalculator() {
     }
    
     const show=getAreaValueById('show-ellipse')
-    show.innerText =area
+    show.innerText =area;
    
 }
